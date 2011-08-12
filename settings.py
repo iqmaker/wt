@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Django settings for wt project.
 import os
 PROJECT_DIR = os.getcwd()

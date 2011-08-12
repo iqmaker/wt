@@ -1,5 +1,4 @@
-# Django settings for wt project.
-
+# -*- coding:utf-8 -*-
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 

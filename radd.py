@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding:utf-8 -*-
 import os
 extensions = [ 'html', 'py', 'js' ]
 for e in extensions:
