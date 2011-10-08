@@ -70,8 +70,12 @@ STATIC_URL = '/static/'
 # URL prefix for admin static files -- CSS, JavaScript and images.
 # Make sure to use a trailing slash.
 # Examples: "http://foo.com/static/admin/", "/static/admin/".
-#ADMIN_MEDIA_PREFIX = 'http://wt.poncy.ru/wt/static/admin/'
-ADMIN_MEDIA_PREFIX = '/static/admin/'
+import socket
+host = socket.gethostname()
+if host == 'eilat':
+    ADMIN_MEDIA_PREFIX = '/wt/static/admin/'
+else:
+    ADMIN_MEDIA_PREFIX = '/static/admin/'
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
